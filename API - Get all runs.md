@@ -61,7 +61,7 @@ The response is an array of objects, each representing a run. Each object has th
 | `userTimeStampEnd` | Number | The timestamp of when the user ended the run. |
 | `userURI` | String | The URI of the user who performed the run. |
 
-### Example
+### Example Requests
 
 Curl Request:
 ```bash
