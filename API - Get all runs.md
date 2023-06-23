@@ -2,7 +2,7 @@
 
 ## GET /runs/:teamID/get
 
-This endpoint retrieves any Rubbish runs for a specified team.
+This endpoint allows you to retrieve all the runs that have been recorded in the Rubbish application. In the context of this application, a "run" refers to a specific time period during which a user activates tracking on their phone through the Rubbish app and actively captures pictures of trash along their route. The data collected from each run includes precise latitude and longitude information that identifies the user's exact location, along with the pictures taken during the run.
 
 ### Headers
 
@@ -84,4 +84,112 @@ fetch("https://qr-dev.rubbish.love/public/api/v1/runs/<teamId>/get", requestOpti
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
+```
+
+### Example Response
+
+```bash
+[
+  {
+    creationTimeStamp: 1686607312.379514,
+    distance: 282.5671775141257,
+    endLat: 37.7962575950519,
+    endLong: -122.39399789911693,
+    endStreet: "(37.7963, -122.3940)",
+    id: "yhVU9Z619mj9AEkBoB6M",
+    isCurrentlyInRubbishRun: false,
+    isSponsored: false,
+    isValidated: false,
+    lastUpdatedServerTimeStamp: {
+      _seconds: 1686608067,
+      _nanoseconds: 182000000,
+    },
+    lastUpdatedUserTimeStamp: 1686608067.0051498,
+    litterNotPickedUpStats: { breakdown: {} },
+    litterPickedUpStats: {
+      breakdown: { xb0dqzTEGBjWTK2kyud2: 1, Z9DoROaK88N5bAqqN21k: 1 },
+    },
+    modelVersion: 205,
+    numberOfItemsNotPickedUp: 0,
+    numberOfItemsPickedUp: 2,
+    numberOfItemsTagged: 2,
+    numberOfPictures: 2,
+    numberOfPicturesNotPickedUp: 0,
+    numberOfPicturesPickedUp: 2,
+    photoStoryIDs: ["nv1WJqoYTxiE2YX5UJ7F", "wByFhK0rudjF9B60ozmv"],
+    privacyLevel: "privacyOpen",
+    rubbishRunMode: "completed",
+    rubbishRunStoryModelID: "yhVU9Z619mj9AEkBoB6M",
+    serverTimeStamp: { _seconds: 1686607312, _nanoseconds: 422000000 },
+    shouldRecalculateRubbishRunStats: false,
+    startLat: 37.796300345846255,
+    startLong: -122.39399653750789,
+    startStreet: "Ferry Building",
+    stepCount: 0,
+    teamDisplayName: "June6thTest",
+    teamID: "SkeC9OksucKoAWGpnEp8",
+    thumbnailImages: [
+      "https://firebasestorage.googleapis.com/v0/b/rubbish-ee2d0.appspot.com/o/StreetRubbishPhotos%2Fthumbnails%2Fnv1WJqoYTxiE2YX5UJ7F_138x300.jpg?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/rubbish-ee2d0.appspot.com/o/StreetRubbishPhotos%2Fthumbnails%2FwByFhK0rudjF9B60ozmv_138x300.jpg?alt=media",
+    ],
+    totalRubbishRunTime: 753,
+    totalRubbishRuns: 1,
+    userFirstName: "Guest",
+    userID: "AaUDLJpSc7QtLIgrGOuL9THwnIc2",
+    userLastName: "User",
+    userName: "guest_wnIc2",
+    userRoles: ["guest"],
+    userTimeStampEnd: 1686608065.419043,
+    userURI: "/User/AaUDLJpSc7QtLIgrGOuL9THwnIc2",
+  },
+  {
+    creationTimeStamp: 1686607234.177617,
+    distance: 17.088419334262316,
+    endLat: 37.796288160205734,
+    endLong: -122.39397820229338,
+    endStreet: "(37.7963, -122.3940)",
+    id: "jtEpGEA15EcyX3XH3Kpe",
+    isCurrentlyInRubbishRun: false,
+    isSponsored: false,
+    isValidated: false,
+    lastUpdatedServerTimeStamp: {
+      _seconds: 1686607308,
+      _nanoseconds: 655000000,
+    },
+    lastUpdatedUserTimeStamp: 1686607308.476722,
+    litterNotPickedUpStats: { breakdown: {} },
+    litterPickedUpStats: { breakdown: {} },
+    modelVersion: 205,
+    numberOfItemsNotPickedUp: 0,
+    numberOfItemsPickedUp: 0,
+    numberOfItemsTagged: 0,
+    numberOfPictures: 0,
+    numberOfPicturesNotPickedUp: 0,
+    numberOfPicturesPickedUp: 0,
+    photoStoryIDs: [],
+    privacyLevel: "privacyOpen",
+    rubbishRunMode: "timedout",
+    rubbishRunStoryModelID: "jtEpGEA15EcyX3XH3Kpe",
+    serverTimeStamp: { _seconds: 1686607234, _nanoseconds: 225000000 },
+    shouldRecalculateRubbishRunStats: false,
+    startLat: 37.79627147835769,
+    startLong: -122.39396475878503,
+    startStreet: "Ferry Building",
+    stepCount: 0,
+    teamDisplayName: "June6thTest",
+    teamID: "SkeC9OksucKoAWGpnEp8",
+    thumbnailImages: [],
+    totalRubbishRunTime: 60,
+    totalRubbishRuns: 1,
+    userFirstName: "Guest",
+    userID: "AaUDLJpSc7QtLIgrGOuL9THwnIc2",
+    userLastName: "User",
+    userName: "guest_wnIc2",
+    userRoles: ["guest"],
+    userTimeStampEnd: 1686607294.202327,
+    userURI: "/User/AaUDLJpSc7QtLIgrGOuL9THwnIc2",
+  },
+];
+
+
 ```
