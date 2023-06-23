@@ -30,7 +30,8 @@ Developer Notes:
 
 ### Step 3: How to use the Application
 - Ensure you have both the server and the client side running from the previous steps and you have the API Key for Esri and the bearer token.
-- Inside the App.js file there is a useEffect function. 
+- Inside the App.js file, Tto plot the city your located in we will need the latitude and the longitude data of your cities center. Under the view variable there is a center parameter: Enter the longitude and latitude of your cities center inside of it to center the Esri Map to your city. You can find the coordinates to the center of your city by asking Google the coordinates of the center of your city. 
+- Inside the App.js file there is a useEffect function.
 - Inside the useEffect feel free to add as many API routes as needed to access data from Rubbish's Servers. 
 - Right now the default route will get all of the current runs you've made and will plot the data on the Esri map
 - Currently the attributes being added to the map are id, afterPhotoURL, photoURL, itemType, street, teamDisplayName, and userName. But you can add any attributes you would like on your map feel free to refer to the API documentation to figure out which parameters you would like to add. 
