@@ -4,7 +4,10 @@ Welcome to the guide on how to integrate Rubbish's "Get all Issues" route with G
 
 Before we start, here's the necessary route information:
 
-Route: `https://qr-dev.rubbish.love/public/api/v1/reports/{:teamId}/get`
+Routes: 
+- `https://qr-dev.rubbish.love/public/api/v1/reports/{:teamId}/get`
+- `https://qr-dev.rubbish.love/public/api/v1/runs/{:teamId}/get`
+- `https://qr-dev.rubbish.love/public/api/v1/runs/{:teamId}/movement/{:runId}`
 
 Required: Bearer token
 
