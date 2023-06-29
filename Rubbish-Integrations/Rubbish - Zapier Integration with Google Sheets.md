@@ -4,7 +4,7 @@ Welcome to the guide on how to integrate Rubbish's "Get all Issues" route with G
 
 Before we start, here's the necessary route information:
 
-Routes: 
+Routes:
 - `https://qr-dev.rubbish.love/public/api/v1/reports/{:teamId}/get`
 - `https://qr-dev.rubbish.love/public/api/v1/runs/{:teamId}/get`
 - `https://qr-dev.rubbish.love/public/api/v1/runs/{:teamId}/movement/{:runId}`
@@ -28,34 +28,34 @@ From the Zapier dashboard, click "Create a Zap".
 ## Step 2: Create a Trigger
 
 1. Find the Rubbish app in the search area.
-   ![1. Find the rubbish app](./assets/step1.png)
+   ![1. Find the rubbish app](../Rubbish-APIs/screenshots/step1.png)
 
 2. In the field that prompts you to choose an event, select "Get all issues", and click "Next".
-   ![2. Get all issues](./assets/step2.png)
+   ![2. Get all issues](../Rubbish-APIs/screenshots/step2.png)
 
 3. Now, create a Rubbish account. A new window will open prompting you to enter your Bearer token.
-   ![3. Rubbish app login](./assets/step3.png)
-   ![4. Rubbish app login](./assets/step4.png)
+   ![3. Rubbish app login](../Rubbish-APIs/screenshots/step3.png)
+   ![4. Rubbish app login](../Rubbish-APIs/screenshots/step4.png)
    <br>\* Note: Email the Rubbish team if you don't have a Bearer token to log in.
 
 4. Once the account is approved, proceed to the next step and test the trigger to ensure you are receiving incident tickets. If successful, continue to the next step.
-   ![5. Test the trigger to ensure proper response](./assets/step5.png)
+   ![5. Test the trigger to ensure proper response](../Rubbish-APIs/screenshots/step5.png)
 
 <a name="create-action"></a>
 
 ## Step 3: Create an Action
 
 1. Associate the Action with Google Sheets.
-   ![1. Google sheets integration](./assets/step6.png)
+   ![1. Google sheets integration](../Rubbish-APIs/screenshots/step6.png)
 
 2. Choose "Create multiple spreadsheet rows" as the option.
-   ![2. Google sheets integration](./assets/step7.png)
+   ![2. Google sheets integration](../Rubbish-APIs/screenshots/step7.png)
 
 3. Log in with your Google account.
-   ![3. Google sheets integration](./assets/step8.png)
+   ![3. Google sheets integration](../Rubbish-APIs/screenshots/step8.png)
 
 4. Under the Actions section, select the Google sheet you want to use. You can use an existing document or create a new sheet.
-   ![4. Google sheets integration](./assets/step9.png)
+   ![4. Google sheets integration](../Rubbish-APIs/screenshots/step9.png)
 
 5. To map out the rows to the data received, copy and paste this into the first row of your Google Sheet document:
 
@@ -66,16 +66,16 @@ From the Zapier dashboard, click "Create a Zap".
 Note: You can limit this to only include the columns you're interested in.
 
 6. Next, ensure the headings in your Google Sheets correspond to the each data point returned from the Rubbish App. You can search each key in the search bar that appears when you click into each row input field.
-   ![5. Google sheets keys](./assets/correctly-mapped.png)
-   ![7. Key-value mapping with google sheet columns](./assets/step11.png)
+   ![5. Google sheets keys](../Rubbish-APIs/screenshots/correctly-mapped.png)
+   ![7. Key-value mapping with google sheet columns](../Rubbish-APIs/screenshots/step11.png)
 
 7. Once done, test the action to verify the information is correctly entered into your Google Sheets document.
-   ![7. Key-value mapping with google sheet](./assets/step13.png)
-   ![8. Verification step - test](./assets/step14.png)
-   ![8. Verification steo - google doc pic](./assets/example-google-doc.png)
+   ![7. Key-value mapping with google sheet](../Rubbish-APIs/screenshots/step13.png)
+   ![8. Verification step - test](../Rubbish-APIs/screenshots/step14.png)
+   ![8. Verification steo - google doc pic](../Rubbish-APIs/screenshots/example-google-doc.png)
 
 8. After you see the test data in your Google Sheets, hit "Publish".
-   ![9. Pre-Publish screen](./assets/step15.png)
-   ![9. Post-Publish screen](./assets/successfully-published.png)
+   ![9. Pre-Publish screen](../Rubbish-APIs/screenshots/step15.png)
+   ![9. Post-Publish screen](../Rubbish-APIs/screenshots/successfully-published.png)
 
 Congratulations! Your document will now update periodically with data from the Rubbish API.
