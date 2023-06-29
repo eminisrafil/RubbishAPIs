@@ -13,12 +13,12 @@ Rubbish is a one-of-a-kind application, making the task of cleaning up litter mo
 ## Documentation
 Our repository houses a range of resources designed to help you better understand and contribute to our platform. Explore our comprehensive API route documentation and app integration guides below:
 
-## API Route Documentation
+### API Route Documentation
 - Get all rubbish incident tickets
 - Get all runs
 - Get all movement information  about a specific run
 
-## App Integration Documentation
+### App Integration Documentation
 - Zapier Integration with Google Sheets
 - Zapier Integration with Salesforce
 - ESRI Integration
