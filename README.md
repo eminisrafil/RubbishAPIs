@@ -24,6 +24,6 @@ Our repository houses a range of resources designed to help you better understan
 - ESRI Integration
 
 ## Getting Involved
-We're always looking for new contributors to help improve Rubbish. Whether you're a developer interested in our back-end processes, a designer with an eye for UX, or simply someone with great ideas for the platform, we'd love to hear from you.
+We're always looking for input to help improve Rubbish. Whether you're a developer, a designer with an eye for UX, or simply someone with great ideas for the platform, we'd love to hear from you.
 
 Thank you for being part of our mission to create a cleaner, healthier planet. We hope you'll find our Git repository a helpful resource as we work together towards this goal.
