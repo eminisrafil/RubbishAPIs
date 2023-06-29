@@ -4,8 +4,8 @@ const https = require('https');
 const app = express();
 const PORT = 3109; // Choose a port number different from your React app's port
 
-const bearer_token = process.env.RUBBISH_BEARER_TOKEN // input your Rubbish Bearer Token Here 
-const team_id = process.env.TEAM_ID
+const bearer_token = process.env.RUBBISH_BEARER_TOKEN || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZWFtSUQiOiJTa2VDOU9rc3VjS29BV0dwbkVwOCIsInRlYW1BcGlLZXlJRCI6Ind5ZXhqakFRZjlMUDRTVDhRU3h4IiwiaWF0IjoxNjg2MDk3ODc5LCJleHAiOjE3MTc2MzM4Nzl9.HSwZqZI-liT29CHOZkohOYgbSIBDT865hymTKefhZXc" // input your Rubbish Bearer Token Here 
+const team_id = process.env.TEAM_ID || "SkeC9OksucKoAWGpnEp8"
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
