@@ -1,6 +1,8 @@
 # Rubbish API Integration with Google Sheets via Zapier
 
-Welcome to the guide on how to integrate Rubbish's "Get all Issues" route with Google Sheets using Zapier. This step-by-step tutorial will help you automatically populate a Google Sheet with reports from the Rubbish app. Customize the columns with your preferred data, and the Rubbish API will fill each associated column automatically. This documentation applies to all Zapier integrations, including getting all incident report ticket, getting rubbish runs completed on the Rubbish app, as well as getting specific movement information about a specific rubbish run.
+Welcome to the guide on how to integrate Rubbish's "Get all Issues" route with Google Sheets using Zapier. This step-by-step tutorial will help you automatically populate a Google Sheet with reports from the Rubbish app. Customize the columns with your preferred data, and the Rubbish API will fill each associated column automatically. 
+
+This documentation applies to all Zapier integrations, including getting all incident report tickets, getting rubbish runs completed on the Rubbish app, as well as getting specific movement information about a specific rubbish run.
 
 Before we start, here's the necessary route information:
 
