@@ -8,7 +8,7 @@ import esriConfig from "@arcgis/core/config.js";
 import SimpleMarkerSymbol from '@arcgis/core/symbols/SimpleMarkerSymbol';
 
 
-esriConfig.apiKey = "input your api key here"
+esriConfig.apiKey = "AAPK5c123c34740b4961887b73f8d0130f0eTRRwSIN1ZxSreOVzITrn_PyLIywqXJYlN6sDccWFf1_f8MHz84gkTYTr7NV_lGgO"
 esriConfig.assetsPath = "./assets";
 
 

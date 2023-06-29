@@ -1,14 +1,29 @@
 # Getting Started with Connecting your Esri App with Rubbish Data / API
 
 ## React Sample Application Setup 
-Software / Node Modules / Packages Used in the Project
+### Software / Node Modules / Packages Used in the Project:
 - Express.js (Server package for Javascript for the backend / server side)
 - React.js (Frontend package for Javascript for the frontend / client side)
 - Esri / ArcGIS Geolocating / Mapping Package so that we can map data on a map and visualize the data. 
 
-Developer Notes: 
+### Goal:
+- The goal of the Esri Map integration is to allow external parties to integrate with Esri and Rubbish API's to have data visualization tools at their disposal that are easy to use and easy to understand on a map
+
+
+### Developer Notes: 
 - Feel free to take elements of this application and utilize it to how you have your application setup. 
 - This application is meant to give an example of how you can utilize Esri and connect to Rubbish's API to plot points on your Esri map and get data visualization for your map data needs. 
+- Contact Rubbish to receive a Bearer Authentication token for API access
+
+Below is an example of how the application will look like on the web. You are free to customize the parameters and the location. Refer to the API documentation for parameters and read further to understand how to change the location.
+![bonus-image](/Rubbish-Integrations/ESRI%20Integegration/Image1.png)
+![bonus-image](/Rubbish-Integrations/ESRI%20Integegration/Image2.png)
+
+## Table of Contents
+
+[Step 1: Setup the Server Side / Backend](#step-1-setup-the-server-side--backend)
+[Step 2: Setup the Client Side / Frontend](#step-2-setup-the-client-side--frontend)
+[Step 3: How to use the Application](#step-3-how-to-use-the-application)
 
 ### Step 1: Setup the Server Side / Backend 
 - First go into the server directory.
@@ -29,7 +44,9 @@ Developer Notes:
 - run `npm start` in the terminal to run the app in development mode. 
 
 ### Step 3: How to use the Application
+
 - Ensure you have both the server and the client side running from the previous steps and you have the API Key for Esri and the bearer token.
+![step3](/Rubbish-Integrations/ESRI%20Integegration/Image3.png)
 - Inside the App.js file, Tto plot the city your located in we will need the latitude and the longitude data of your cities center. Under the view variable there is a center parameter: Enter the longitude and latitude of your cities center inside of it to center the Esri Map to your city. You can find the coordinates to the center of your city by asking Google the coordinates of the center of your city. 
 - Inside the App.js file there is a useEffect function.
 - Inside the useEffect feel free to add as many API routes as needed to access data from Rubbish's Servers. 
@@ -37,5 +54,6 @@ Developer Notes:
 - Currently the attributes being added to the map are id, afterPhotoURL, photoURL, itemType, street, teamDisplayName, and userName. But you can add any attributes you would like on your map feel free to refer to the API documentation to figure out which parameters you would like to add. 
 - You can find the attributes section under the pointGraphic Variable inside the App.js file. 
 - Further API Documentation for other routes is provided inside the root directory. 
-- Keep in mind that certain API's from Rubbish will require filter parameters. The API documentation will explain this. 
+- Keep in mind that certain API's from Rubbish will require filter parameters. The API documentation will explain this.
+
 
