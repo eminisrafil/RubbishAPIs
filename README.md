@@ -20,8 +20,8 @@ Our repository houses a range of resources designed to help you better understan
 
 ### App Integration Documentation
 - [Zapier Integration with Google Sheets](./Rubbish-Integrations/Rubbish%20-%20Zapier%20Integration%20with%20Google%20Sheets.md)
-- Zapier Integration with Salesforce
-- ESRI Integration
+- [Zapier Integration with Salesforce](./Rubbish-Integrations/Rubbish%20-%20Zapier%20Itegration%20with%20Salesforce.md)
+- [ESRI Integration](./Rubbish-Integrations/ESRI%20Integegration/Rubbish%20-%20Esri%20Mapping%20Integration.md)
 
 ## Getting Involved
 We're always looking for input to help improve Rubbish. Whether you're a developer, a designer with an eye for UX, or simply someone with great ideas for the platform, we'd love to hear from you.
