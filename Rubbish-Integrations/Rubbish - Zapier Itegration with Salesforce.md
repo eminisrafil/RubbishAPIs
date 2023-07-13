@@ -1,4 +1,4 @@
-# Rubbish API Integration with Google Sheets via Zapier
+# Rubbish API Integration with Salesforce via Zapier
 
 Welcome to the guide on how to integrate Rubbish's "Get all Issues" route with Salesforce using Zapier. This step-by-step tutorial will help you automatically populate Salesforce CRM with opportunities, or any salesforce object, from the Rubbish app. Customize the details in your CRM with your preferred data, and the Rubbish API will fill each associated field automatically.
 
@@ -116,20 +116,16 @@ The next step involves defining an action in Zapier. This action is essentially 
 
 8.  Once you've set everything up, it's time to test your Zap to ensure it functions as expected.
     ![Test your zap](../Rubbish-APIs/screenshots/ZapSal-8.png)
-
-<br/>
-
-9.  Perform another test to validate the results.
     ![Test your zap](../Rubbish-APIs/screenshots/ZapSal-9.png)
 
 <br/>
 
-10. Visit your Salesforce account to verify the test result. You should be able to see the output of the test there.
+9. Visit your Salesforce account to verify the test result. You should be able to see the output of the test there.
     ![Check Salesforce to make sure you see the test](../Rubbish-APIs/screenshots/ZapSal-10.png)
 
 <br/>
 
-11. If the test runs successfully, go ahead and publish your Zap. This action will set it live, and it will start running as per the defined triggers and actions.
+10. If the test runs successfully, go ahead and publish your Zap. This action will set it live, and it will start running as per the defined triggers and actions.
     ![Publish your zap](../Rubbish-APIs/screenshots/ZapSal-11.png)
 
 <br/>
