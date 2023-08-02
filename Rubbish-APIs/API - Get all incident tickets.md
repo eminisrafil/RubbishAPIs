@@ -1,6 +1,6 @@
 # Rubbish API Documentation - Get all incident tickets
 
-## GET /incident-tickets/:teamID/get
+## GET /reports/:teamID/get
 
 This endpoint allows you to retrieve all the incident tickets that have been recorded in the Rubbish application. An "incident ticket" refers to a report about a specific instance of trash or litter, detailing information such as the type of rubbish, its location, and whether it has been picked up.
 
@@ -76,6 +76,7 @@ The response is an array of objects, each representing an incident ticket. Each 
 | `userAgent` | String | The user agent of the device from which the incident was reported. |
 | `userIpAddress` | String | The IP address of the user who reported the incident. |
 | `userName` | String | The name of the user who reported the incident. |
+| `validatedState` | String | Describes if submission has been validated by user. |
 
 ### Example Requests
 
