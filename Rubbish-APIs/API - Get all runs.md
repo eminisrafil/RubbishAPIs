@@ -53,6 +53,7 @@ The response is an array of objects, each representing a run. Each object has th
 | `privacyLevel` | String | The privacy level of the run. |
 | `rubbishRunMode` | String | The mode of the rubbish run. |
 | `rubbishRunStoryModelID` | String | The ID of the rubbish run story model. |
+| `runDescription` | String | Description of the run provided by the user. |
 | `serverTimeStamp` | Object | The timestamp from the server. Contains `_seconds` and `_nanoseconds`. |
 | `shouldRecalculateRubbishRunStats` | Boolean | Indicates whether the rubbish run stats should be recalculated. |
 | `startLat` | Number | The latitude of the start location of the run. |
@@ -131,6 +132,7 @@ fetch("https://qr-dev.rubbish.love/public/api/v1/runs/<teamId>/get", requestOpti
     privacyLevel: "privacyOpen",
     rubbishRunMode: "completed",
     rubbishRunStoryModelID: "yhVU9Z619mj9AEkBoB6M",
+    runDescription: "Emin Test Run",
     serverTimeStamp: { _seconds: 1686607312, _nanoseconds: 422000000 },
     shouldRecalculateRubbishRunStats: false,
     startLat: 37.796300345846255,
