@@ -12,6 +12,18 @@ This endpoint allows you to retrieve all the incident tickets that have been rec
 
 - `teamID`: The ID of the team for which the incident tickets are to be retrieved.
 
+### Query Parameters
+
+- `limit`: This parameter controls the maximum number of incident tickets that the API returns in one response. Value should be an integer. Default value is 50 if not specified.
+
+- `offset`: This parameter specifies the starting point for the collection of returned incident tickets. Value should be an integer. It works in conjunction with `limit` for implementing pagination.
+
+- `afterTimeStamp`: This parameter is used to get incident tickets that were created after a specific time. The value should be in a standardized date-time format such as ISO 8601 (e.g., 'YYYY-MM-DDTHH:MM:SSZ').
+
+- `beforeTimeStamp`: This parameter is used to get incident tickets that were created before a specific time. The value should be in a standardized date-time format such as ISO 8601 (e.g., 'YYYY-MM-DDTHH:MM:SSZ').
+
+
+
 ### Response
 
 The response is an array of objects, each representing an incident ticket. Each object has the following keys:
