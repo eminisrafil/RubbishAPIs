@@ -2,7 +2,7 @@
 
 Welcome to the guide on how to integrate Rubbish's "Get all Issues" route with Salesforce using Zapier. This step-by-step tutorial will help you automatically populate Salesforce CRM with opportunities, or any salesforce object, from the Rubbish app. Customize the details in your CRM with your preferred data, and the Rubbish API will fill each associated field automatically.
 
-This documentation applies to all Zapier integrations, including getting all incident report tickets, getting rubbish runs completed on the Rubbish app, as well as getting specific movement information about a specific rubbish run.
+This documentation applies to all Zapier integrations, including getting all submission report tickets, getting rubbish runs completed on the Rubbish app, as well as getting specific movement information about a specific rubbish run.
 
 Before we start, here's the necessary route information:
 
@@ -47,7 +47,7 @@ From the Zapier dashboard, click "Create a Zap".
 
 <br/>
 
-4. Once the account is approved, proceed to the next step and test the trigger to ensure you are receiving incident tickets. If successful, continue to the next step.
+4. Once the account is approved, proceed to the next step and test the trigger to ensure you are receiving submission tickets. If successful, continue to the next step.
    ![5. Test the trigger to ensure proper response](../Rubbish-APIs/screenshots/step5.png)
 
 <br/>
