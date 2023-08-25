@@ -14,13 +14,13 @@ This endpoint allows you to retrieve all the runs that have been recorded in the
 
 ### Query Parameters
 
-- `limit`: This parameter controls the maximum number of incident tickets that the API returns in one response. Value should be an integer. Default value is 50 if not specified.
+- `limit`: This parameter controls the maximum number of submission that the API returns in one response. Value should be an integer. Default value is 50 if not specified.
 
-- `offset`: This parameter specifies the starting point for the collection of returned incident tickets. Value should be an integer. It works in conjunction with `limit` for implementing pagination.
+- `offset`: This parameter specifies the starting point for the collection of returned submission. Value should be an integer. It works in conjunction with `limit` for implementing pagination.
 
-- `afterTimeStamp`: This parameter is used to get incident tickets that were created after a specific time. The value should be in a standardized date-time format such as ISO 8601 (e.g., 'YYYY-MM-DDTHH:MM:SSZ').
+- `afterTimeStamp`: This parameter is used to get submission that were created after a specific time. The value should be in a standardized date-time format such as ISO 8601 (e.g., 'YYYY-MM-DDTHH:MM:SSZ').
 
-- `beforeTimeStamp`: This parameter is used to get incident tickets that were created before a specific time. The value should be in a standardized date-time format such as ISO 8601 (e.g., 'YYYY-MM-DDTHH:MM:SSZ').
+- `beforeTimeStamp`: This parameter is used to get submission that were created before a specific time. The value should be in a standardized date-time format such as ISO 8601 (e.g., 'YYYY-MM-DDTHH:MM:SSZ').
 
 
 ### Response
@@ -53,7 +53,7 @@ The response is an array of objects, each representing a run. Each object has th
 | `privacyLevel` | String | The privacy level of the run. |
 | `rubbishRunMode` | String | The mode of the rubbish run. |
 | `rubbishRunStoryModelID` | String | The ID of the rubbish run story model. |
-| `runDescription` | String | Description of the run provided by the user. |
+| `runDescription` | String | User description of Rubbish Run. |
 | `serverTimeStamp` | Object | The timestamp from the server. Contains `_seconds` and `_nanoseconds`. |
 | `shouldRecalculateRubbishRunStats` | Boolean | Indicates whether the rubbish run stats should be recalculated. |
 | `startLat` | Number | The latitude of the start location of the run. |

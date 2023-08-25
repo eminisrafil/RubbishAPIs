@@ -2,7 +2,7 @@
 
 ## GET /reports/:teamID/get
 
-This endpoint allows you to retrieve all the submission tickets that have been recorded in the Rubbish application. An "submission ticket" refers to a report about a specific instance of trash or litter, detailing information such as the type of rubbish, its location, and whether it has been picked up.
+This endpoint allows you to retrieve all the submission tickets that have been recorded in the Rubbish application. A "submission ticket" refers to a report about a specific instance of trash or litter, detailing information such as the type of rubbish, its location, and whether it has been picked up.
 
 ### Headers
 
@@ -14,13 +14,19 @@ This endpoint allows you to retrieve all the submission tickets that have been r
 
 ### Query Parameters
 
-- `limit`: This parameter controls the maximum number of submissions tickets that the API returns in one response. Value should be an integer. Default value is 50 if not specified.
+- `limit`: This parameter controls the maximum number of submissions tickets that the API returns in one response. Value should be an integer. Default value is 100 if not specified.
 
 - `offset`: This parameter specifies the starting point for the collection of returned submissions tickets. Value should be an integer. It works in conjunction with `limit` for implementing pagination.
 
-- `afterTimeStamp`: This parameter is used to get submission tickets that were created after a specific time. The value should be in a standardized date-time format such as ISO 8601 (e.g., 'YYYY-MM-DDTHH:MM:SSZ').
+- `afterTimeStamp`: This parameter is used to retrieve submission tickets that were created after a specific time. The value should be provided as a Unix timestamp (e.g., 1686607314). It allows users to filter results to only include tickets created after the specified timestamp.
 
-- `beforeTimeStamp`: This parameter is used to get submission tickets that were created before a specific time. The value should be in a standardized date-time format such as ISO 8601 (e.g., 'YYYY-MM-DDTHH:MM:SSZ').
+- `beforeTimeStamp`: This parameter is used to retrieve submission tickets that were created before a specific time. The value should be provided as a Unix timestamp (e.g., 1686607314). It allows users to filter results to only include tickets created before the specified timestamp.
+
+- `userTimeStamp`: This parameter is used to retrieve submission tickets that were created or updated by a user at a specific time. The value should be provided as a Unix timestamp (e.g., 1686607314). It can be useful for tracking user activity or changes made by a specific user at a given time.
+
+- `filterRubbishType`: This parameter allows the user to filter the submission tickets based on the type of rubbish. The value should be a string that matches one of the predefined rubbish types in the application (e.g., 'Plastic', 'Organic', 'Metal'). By using this parameter, users can focus on specific types of rubbish reports.
+
+- `filterRubbishTypeId`: This parameter is similar to filterRubbishType but uses an ID instead of a string name. It allows users to filter the submission tickets based on the unique identifier associated with each rubbish type in the application. This can be especially useful for systems or integrations that rely on IDs rather than string names for categorization.
 
 
 
@@ -76,7 +82,7 @@ The response is an array of objects, each representing an submission ticket. Eac
 | `userAgent` | String | The user agent of the device from which the submission was reported. |
 | `userIpAddress` | String | The IP address of the user who reported the submission. |
 | `userName` | String | The name of the user who reported the submission. |
-| `validatedState` | String | Describes if submission has been validated by user. |
+| `validationState` | String | Describes if submission has been validated by user. |
 
 ### Example Requests
 
