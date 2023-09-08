@@ -18,9 +18,9 @@ This endpoint allows you to retrieve all the runs that have been recorded in the
 
 - `offset`: This parameter specifies the starting point for the collection of returned submission. Value should be an integer. It works in conjunction with `limit` for implementing pagination.
 
-- `afterTimeStamp`: This parameter is used to get submission that were created after a specific time. The value should be provided as a Unix timestamp (e.g., 1686607314). It allows users to filter results to only include tickets created after the specified timestamp.
+- `afterTimeStamp`: This parameter is used to get submission that were created after a specific time. The value should be provided as a Unix timestamp (e.g., 1686607314). 
 
-- `beforeTimeStamp`: This parameter is used to get submission that were created before a specific time. The value should be provided as a Unix timestamp (e.g., 1686607314). It allows users to filter results to only include tickets created after the specified timestamp.
+- `beforeTimeStamp`: This parameter is used to get submission that were created before a specific time. The value should be provided as a Unix timestamp (e.g., 1686607314).
 
 
 ### Response
