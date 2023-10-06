@@ -31,7 +31,7 @@ From the Zapier dashboard, click "Create a Zap".
 ## Step 2: Create a Trigger
 
 1. Find the Rubbish app in the search area.
-   ![1. Find the rubbish app](../Rubbish-APIs/screenshots/step1.png)
+   ![1. Find the rubbish app](../Rubbish-APIs/screenshots/Rubbish-Zapier-Search.png)
 
 <br/>
 
@@ -42,12 +42,17 @@ From the Zapier dashboard, click "Create a Zap".
 
 3. Now, create a Rubbish account. A new window will open prompting you to enter your Bearer token.
    ![3. Rubbish app login](../Rubbish-APIs/screenshots/step3.png)
-   ![4. Rubbish app login](../Rubbish-APIs/screenshots/step4.png)
+   ![4. Rubbish app login](../Rubbish-APIs/screenshots/Rubbish-Zapier-Login.png)
    <br>\* Note: Email the Rubbish team if you don't have a Bearer token to log in.
 
 <br/>
 
-4. Once the account is approved, proceed to the next step and test the trigger to ensure you are receiving submission tickets. If successful, continue to the next step.
+4. Input additional parameters to limit or determine the type of responses that will automatically populate your Salesforce CRM.
+   ![4. Google sheets integration](../Rubbish-APIs/screenshots/Rubbish-Zapier-Additional-Params.png)
+
+<br/>
+
+5. Once the account is approved, proceed to the next step and test the trigger to ensure you are receiving submission tickets. If successful, continue to the next step.
    ![5. Test the trigger to ensure proper response](../Rubbish-APIs/screenshots/step5.png)
 
 <br/>
@@ -121,7 +126,7 @@ The next step involves defining an action in Zapier. This action is essentially 
 <br/>
 
 9. Visit your Salesforce account to verify the test result. You should be able to see the output of the test there.
-    ![Check Salesforce to make sure you see the test](../Rubbish-APIs/screenshots/ZapSal-10.png)
+   ![Check Salesforce to make sure you see the test](../Rubbish-APIs/screenshots/ZapSal-10.png)
 
 <br/>
 

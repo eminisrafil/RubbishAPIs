@@ -7,6 +7,7 @@ This documentation applies to all Zapier integrations, including getting all sub
 Before we start, here's the necessary route information:
 
 Routes:
+
 - `https://qr-dev.rubbish.love/public/api/v1/reports/{:teamId}/get`
 - `https://qr-dev.rubbish.love/public/api/v1/runs/{:teamId}/get`
 - `https://qr-dev.rubbish.love/public/api/v1/runs/{:teamId}/movement/{:runId}`
@@ -30,17 +31,20 @@ From the Zapier dashboard, click "Create a Zap".
 ## Step 2: Create a Trigger
 
 1. Find the Rubbish app in the search area.
-   ![1. Find the rubbish app](../Rubbish-APIs/screenshots/step1.png)
+   ![1. Find the rubbish app](../Rubbish-APIs/screenshots/Rubbish-Zapier-Search.png)
 
 2. In the field that prompts you to choose an event, select "Get all issues", and click "Next".
    ![2. Get all issues](../Rubbish-APIs/screenshots/step2.png)
 
 3. Now, create a Rubbish account. A new window will open prompting you to enter your Bearer token.
    ![3. Rubbish app login](../Rubbish-APIs/screenshots/step3.png)
-   ![4. Rubbish app login](../Rubbish-APIs/screenshots/step4.png)
+   ![4. Rubbish app login](../Rubbish-APIs/screenshots/Rubbish-Zapier-Login.png)
    <br>\* Note: Email the Rubbish team if you don't have a Bearer token to log in.
 
-4. Once the account is approved, proceed to the next step and test the trigger to ensure you are receiving submission tickets. If successful, continue to the next step.
+4. Input additional parameters to limit or determine the type of responses that will automatically populate your Google sheet
+   ![4. Google sheets integration](../Rubbish-APIs/screenshots/Rubbish-Zapier-Additional-Params.png)
+
+5. Once the account is approved, proceed to the next step and test the trigger to ensure you are receiving submission tickets. If successful, continue to the next step.
    ![5. Test the trigger to ensure proper response](../Rubbish-APIs/screenshots/step5.png)
 
 <a name="create-action"></a>
